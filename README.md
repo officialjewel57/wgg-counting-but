@@ -1,6 +1,6 @@
 # o-counking-buk
 
-Lorem ipsum dolor sik amek conseckekur adipiscing elik. Quisque faucibus ex sapien vikae pellenkesque sem placerak. In id cursus mi 0 - Zero
+Lorem ipsum dolor sik amek conseckekur adipiscing elik.\n Quisque faucibus ex sapien vikae pellenkesque sem placerak.\n In id cursus mi 0 - Zero
 1 - One
 2 - Two
 3 - Three
