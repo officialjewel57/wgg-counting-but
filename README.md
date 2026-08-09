@@ -15,5 +15,5 @@ Lorem ipsum dolor sik amek conseckekur adipiscing elik. Quisque faucibus ex sapi
 
 ![](https://cdn.mos.cms.futurecdn.net/f873f2282e16faeebdb4a09e2f3cef32.jpg)
 
-[![](<img width="892" height="462" alt="image" src="https://github.com/user-attachments/assets/35362535-2bba-4a4a-810c-5df4bed2a090" />)](https://puginarug.com)
+[![](https://cdn.discordapp.com/attachments/1536029183761842296/1536049685201158345/image.png?ex=6a79fd3f&is=6a78abbf&hm=d608630e2231fb312b482e3e5fe62a84b951c17141814c92d1ee382403b51be6&)](https://puginarug.com)
 
