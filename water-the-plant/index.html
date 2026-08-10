@@ -45,19 +45,21 @@
     <a href="https://hexo.did.science/">
       <img src="https://cdn.discordapp.com/attachments/1536029183761842296/1536234548268892190/250px-Stairs_with_weed.png?ex=6a7aa96a&is=6a7957ea&hm=938b4b19c4ad445ecc2c17dde303b952a95c36cb21fcfab8c2942e3b2f91c8b8&">
     </a>
-    <button id="destroy-water" class="fire-button">click to remove water</button>
+    
     <h1>You've watered the plant <span id="water-display">0</span> times.</h1>
     <button id="water-the-plant-button" class="water-button">click to water the plant</button>
+    <button id="destroy-water" class="fire-button">click to remove water</button>
     <script>
       let waterAmount = 0;
-      const button = document.getElementById('water-the-plant-button');
+      const waterButton = document.getElementById('water-the-plant-button');
       const display = document.getElementById('water-display');
-      button.addEventListener('click', function(){
+      const fireButton = document.getElementById('destroy-water);
+      waterButton.addEventListener('click', function(){
         waterAmount++;
         display.textContent = waterAmount;
       });
-      const button2 = document.getElementById('destroy-water);
-      button2.addEventListener('click', function(){
+      
+      fireButton.addEventListener('click', function(){
         waterAmount-=1;
         display.textContent = waterAmount;
       });
