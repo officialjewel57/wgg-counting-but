@@ -51,7 +51,7 @@
     <button id="increase-sun-intensity-button" class="fire-button">click to increase uv rays :(</button>
     <img src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882786/EducationHub/photos/sun-blasts-a-m66-flare.jpg" width=450000000000% alt=center text-align: center>
     <script>
-      let waterAmount = 15;
+      let waterAmount = 15.9666666666666666666666666666666;
       let sunIntensity = 1;
       let running = true;
       const plant = document.getElementById('plant');
@@ -62,6 +62,7 @@
       const interval = setInterval(wps, 16.66666)
       const interval2 = setInterval(gameOver, 16)
       display.textContent = Math.floor(waterAmount);
+      sunIntensityDisplay.textContent = Math.floor(sunIntensity);
       function wps(){
         waterAmount = waterAmount - (sunIntensity / 60);
         display.textContent = Math.floor(waterAmount);
