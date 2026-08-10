@@ -1,14 +1,7 @@
 # o-counking-buk
 
 <html>
-  <style>
-    a:link {
-      color: red;
-      background-color: transparent;
-      text-decoration: none;
-    }
-</style>
-  <body style="background-color:powderblue;">
+  <body style="background-color:#398027;">
   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:red;" style="font-family:verdana;" style="font-size:300;">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
     
   </body>
