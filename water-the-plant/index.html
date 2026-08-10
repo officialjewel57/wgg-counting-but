@@ -42,27 +42,24 @@
     <a href="https://hexo.did.science/">
       <img src="https://www.ikea.com/us/en/images/products/fejka-artificial-potted-plant-indoor-outdoor-monstera__0959226_pe809439_s5.jpg?f=s" width=55%>
     </a>
-    <a href="https://hexo.did.science/">
-      <img src="https://cdn.discordapp.com/attachments/1536029183761842296/1536234548268892190/250px-Stairs_with_weed.png?ex=6a7aa96a&is=6a7957ea&hm=938b4b19c4ad445ecc2c17dde303b952a95c36cb21fcfab8c2942e3b2f91c8b8&">
-    </a>
+
+    <img src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882786/EducationHub/photos/sun-blasts-a-m66-flare.jpg" width=10% alt=center text-align: center>
     
     <h1>You've watered the plant <span id="water-display">0</span> times.</h1>
+    <h3>You currently lose 1 water per second because of the sun.</h3>
     <button id="water-the-plant-button" class="water-button">click to water the plant</button>
-    <button id="destroy-water" class="fire-button">click to remove water</button>
     <script>
       let waterAmount = 0;
       const waterButton = document.getElementById('water-the-plant-button');
       const display = document.getElementById('water-display');
-      const fireButton = document.getElementById('destroy-water);
       waterButton.addEventListener('click', function(){
         waterAmount++;
         display.textContent = waterAmount;
       });
-      
-      fireButton.addEventListener('click', function(){
-        waterAmount-=1;
-        display.textContent = waterAmount;
-      });
+      function wps(wa, add){
+        waterAmount = waterAmount + amount;
+      }
+      setInterval(wps, 1000, waterAmount, -1)
     </script>
   </body>
 </html>
