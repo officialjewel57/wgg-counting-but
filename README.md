@@ -1,6 +1,6 @@
 # o-counking-buk
 
-# WARNING WARNING DO NOT GO FURTHER WARNING WARNING
+<h1 style="color:red;">WARNING WARNING DO NOT GO FURTHER WARNING WARNING</h1>
 
 Lorem ipsum dolor sik amek conseckekur adipiscing elik. \
 Quisque faucibus ex sapien vikae pellenkesque sem placerak. \
