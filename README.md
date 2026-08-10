@@ -14,6 +14,21 @@ In id cursus mi 0 - Zero
 8 - Eight
 9 - Nine
 
+<p class="flash-smooth">https://www.youtube.com/watch?v=dQw4w9WgXcQ</p>
+
+<style>
+.flash-smooth {
+  color: red;
+  font-weight: bold;
+  animation: blinker-smooth 1.5s linear infinite;
+}
+
+@keyframes blinker-smooth {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+</style>
+
 <img width="345" height="241" alt="image" src="https://github.com/user-attachments/assets/9445b684-11df-43e2-b25a-316de0a8cfa6" />
 
 ![](https://cdn.discordapp.com/attachments/1536029183761842296/1536040777975734332/cattongs.webp?ex=6a79f4f3&is=6a78a373&hm=c31eb5eaae1ace4159751ef2e817ae152aac408206e255af0badabf1bd1b7113&)
