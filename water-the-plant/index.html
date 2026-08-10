@@ -57,18 +57,19 @@
       const waterButton = document.getElementById('water-the-plant-button');
       const display = document.getElementById('water-display');
       const interval = setInterval(wps, 1000)
+      const interval2 = setInterval(gameOver, 16)
       display.textContent = waterAmount;
       function wps(){
         waterAmount--;
         display.textContent = waterAmount;
       }
       function gameOver(){
-        alert("you lost :(")
-        plant.src="https://landscape-solutions.net/wp-content/uploads/how-to-tell-if-a-plant-is-dead.jpg";
+        if(waterAmount < 1){
+          alert("you lost :(")
+          plant.src="https://landscape-solutions.net/wp-content/uploads/how-to-tell-if-a-plant-is-dead.jpg";
+        }
       }
-      if(waterAmount < 1){
-        gameOver();
-      }
+      
       waterButton.addEventListener('click', function(){
         if(running == true){
           waterAmount++;
