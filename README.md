@@ -1,8 +1,13 @@
 # o-counking-buk
 
 <html>
-  <body style="background-color:#ff00ff;">
-  </body>
+  <head>
+    <style>
+      body {
+        background-image: url('https://i5.walmartimages.com/asr/20c6c0b7-42ed-404f-9b3a-5f6796d2150c.3c0bc38bf3e0fc3434d58668592bbf45.jpeg');
+      }
+    </style>
+  </head>
 </html>
 
 [![click :0](https://github.com/user-attachments/assets/f0fb8eb0-c43d-4564-92f1-7ebf6117c16e)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
