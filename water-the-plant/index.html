@@ -44,10 +44,8 @@
     <a href="https://hexo.did.science/">
       <img id="plant" src="https://www.ikea.com/us/en/images/products/fejka-artificial-potted-plant-indoor-outdoor-monstera__0959226_pe809439_s5.jpg?f=s" width=55%>
     </a>
-
     
-    
-    <h1 id = "texttexttext">You've watered the plant <span id="water-display">0</span> times.</h1>
+    <h1>You've watered the plant <span id="water-display">0</span> times.</h1>
     <h3>You currently lose <span id="sun-intensity">0</span> water per second because of the sun (btw the sun is to scale).</h3>
     <button id="water-the-plant-button" class="water-button">click to water the plant :)</button>
     <button id="increase-sun-intensity-button" class="fire-button">click to increase uv rays :(</button>
@@ -76,8 +74,9 @@
 
       function moreSunIntensity(){
         if(running == true){
-        sunIntensity++;
-        display.textContent = waterAmount;
+          sunIntensity++;
+          display.textContent = waterAmount;
+        }
       }
       
       waterButton.addEventListener('click', function(){
@@ -86,7 +85,6 @@
           display.textContent = waterAmount;
         }
       });
-
       sunButton.addEventListener('click', moreSunIntensity());
     </script>
   </body>
