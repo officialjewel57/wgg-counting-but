@@ -5,7 +5,7 @@
     <style>
       body {
         font-family: verdana;
-        background-color: magenta;
+        background-color: pink;
       }
       
       .water-button {
@@ -73,6 +73,12 @@
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
         }
       }
+
+      function moreSunIntensity(){
+        if(running == true){
+        sunIntensity++;
+        display.textContent = waterAmount;
+      }
       
       waterButton.addEventListener('click', function(){
         if(running == true){
@@ -81,12 +87,7 @@
         }
       });
 
-      sunButton.addEventListener('click', function(){
-        if(running == true){
-          sunIntensity++;
-          display.textContent = waterAmount;
-        }
-      );
+      sunButton.addEventListener('click', moreSunIntensity());
     </script>
   </body>
 </html>
