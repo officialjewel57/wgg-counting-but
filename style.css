@@ -1,3 +1,7 @@
 body {
   background: url(doritoes.jpg);
 }
+
+h6 {
+  font-weight: bold;
+}
