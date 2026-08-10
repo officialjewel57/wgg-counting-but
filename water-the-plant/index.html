@@ -51,15 +51,16 @@
     <script>
       let waterAmount = 0;
       const waterButton = document.getElementById('water-the-plant-button');
-      const display = document.getElementById('water-display');
+      const display = document.getElementById('water-display');      
+      const interval = setInterval(wps, 1000)
+      function wps(){
+        waterAmount--;
+      }
       waterButton.addEventListener('click', function(){
         waterAmount++;
         display.textContent = waterAmount;
       });
-      function wps(wa, add){
-        waterAmount = waterAmount + amount;
-      }
-      setInterval(wps, 1000, waterAmount, -1)
+      
     </script>
   </body>
 </html>
