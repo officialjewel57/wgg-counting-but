@@ -1,7 +1,7 @@
 # o-counking-buk
 
 <html>
-  <body style="background-color:powderblue;">
+  <body style="background-color:#ff00ff;">
   </body>
 </html>
 
