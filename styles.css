@@ -6,3 +6,7 @@ body {
 h6 {
   font-weight: bold;
 }
+
+p {
+  border: 2px solid powderblue;
+}
