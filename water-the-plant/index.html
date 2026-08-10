@@ -40,6 +40,7 @@
     </style>
   </head>
   <body>
+    <h1>KEEP THE PLANT ALIVE</h1>
     <a href="https://hexo.did.science/">
       <img src="https://www.ikea.com/us/en/images/products/fejka-artificial-potted-plant-indoor-outdoor-monstera__0959226_pe809439_s5.jpg?f=s" width=55%>
     </a>
@@ -54,8 +55,10 @@
       const waterButton = document.getElementById('water-the-plant-button');
       const display = document.getElementById('water-display');      
       const interval = setInterval(wps, 1000)
+      display.textContent = waterAmount;
       function wps(){
         waterAmount--;
+        display.textContent = waterAmount;
       }
       waterButton.addEventListener('click', function(){
         waterAmount++;
