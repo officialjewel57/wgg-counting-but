@@ -60,32 +60,32 @@
       const display = document.getElementById('water-display');
       const interval = setInterval(wps, 16.66666)
       const interval2 = setInterval(gameOver, 16)
-      display.textContent = waterAmount;
+      display.textContent = Math.floor(waterAmount);
       function wps(){
         waterAmount = waterAmount - (sunIntensity / 60);
-        display.textContent = waterAmount;
+        display.textContent = Math.floor(waterAmount);
       }
       function gameOver(){
         if(waterAmount < 1){
           plant.src="https://landscape-solutions.net/wp-content/uploads/how-to-tell-if-a-plant-is-dead.jpg";
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-        }
-      }
-
-      function moreSunIntensity(){
-        if(running == true){
-          sunIntensity++;
-          display.textContent = waterAmount;
+          clearInterval(interval);
+          clearInterval(interval2);
         }
       }
       
       waterButton.addEventListener('click', function(){
         if(running == true){
           waterAmount++;
-          display.textContent = waterAmount;
+          display.textContent = Math.floor(waterAmount);
         }
       });
-      sunButton.addEventListener('click', moreSunIntensity());
+      sunButton.addEventListener('click', function(){
+        if(running == true){
+          sunIntensity++;
+          display.textContent = Math.floor(waterAmount);
+        }
+      });
     </script>
   </body>
 </html>
