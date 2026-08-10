@@ -45,12 +45,13 @@
       <img id="plant" src="https://www.ikea.com/us/en/images/products/fejka-artificial-potted-plant-indoor-outdoor-monstera__0959226_pe809439_s5.jpg?f=s" width=55%>
     </a>
 
-    <img src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882786/EducationHub/photos/sun-blasts-a-m66-flare.jpg" width=450000000000% alt=center text-align: center>
+    
     
     <h1 id = "texttexttext">You've watered the plant <span id="water-display">0</span> times.</h1>
-    <h3>You currently lose 1 water per second because of the sun.</h3>
+    <h3>You currently lose <span id="sun-intensity">0</span> water per second because of the sun (btw the sun is to scale).</h3>
     <button id="water-the-plant-button" class="water-button">click to water the plant :)</button>
     <button id="increase-sun-intensity-button" class="fire-button">click to increase uv rays :(</button>
+    <img src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882786/EducationHub/photos/sun-blasts-a-m66-flare.jpg" width=450000000000% alt=center text-align: center>
     <script>
       let waterAmount = 15;
       let sunIntensity = 1;
@@ -69,7 +70,7 @@
       function gameOver(){
         if(waterAmount < 1){
           plant.src="https://landscape-solutions.net/wp-content/uploads/how-to-tell-if-a-plant-is-dead.jpg";
-          alert("you lost :(")
+          window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
         }
       }
       
