@@ -1,7 +1,34 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      .water-button {
+        background-color: #0567FA;
+        color: white;
+        font-size: 15px;
+        padding: 12px;
+        border: 2px solid powderblue;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .water-button:hover {
+        background-color: #013C94;
+        border: 2px solid #0567FA;
+      }
+    </style>
+  </head>
   <body>
     <h1>Times you've watered the plant: <span id="water-display">0</span></h1>
-    <button id="water-button">click to water the plant
+    <button id="water-the-plant-button" class="water-button">click to water the plant</button>
+    <script>
+      let waterAmount = 0;
+      const button = document.getElementById('water-the-plant-button');
+      const display = document.getElementById('water-display');
+      button.addEventListener('click', function(){
+        count++;
+        display.textContent = count;
+      });
+    </script>
   </body>
 </html>
