@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>KEEP THE PLANT ALIVE</title>
     <style>
       body {
         font-family: verdana;
@@ -49,7 +50,7 @@
     <h3>You currently lose 1 water per second because of the sun.</h3>
     <button id="water-the-plant-button" class="water-button">click to water the plant :)</button>
     <script>
-      let waterAmount = 0;
+      let waterAmount = 15;
       const waterButton = document.getElementById('water-the-plant-button');
       const display = document.getElementById('water-display');      
       const interval = setInterval(wps, 1000)
