@@ -2,21 +2,29 @@
 <html>
   <head>
     <style>
-      ul.horizontal {
+      ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: #333333;
       }
-
-      ul {
+      
+      ul li {
+        float: left;
+      }
+      
+      ul li a {
         display: block;
-        list-style-type: disc;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        padding-inline-start: 40px;
-        unicode-bidi: isolate;
+        color: white;
+        text-align: center;
+        font-family: Trebuchet MS, sans-serif;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      ul li a:hover {
+        background-color: #111111;
       }
     </style>
   </head>
