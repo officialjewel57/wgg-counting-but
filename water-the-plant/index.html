@@ -5,7 +5,7 @@
     <style>
       body {
         font-family: verdana;
-        background-color: lime;
+        background-color: magenta;
       }
       
       .water-button {
@@ -50,23 +50,26 @@
     <h1 id = "texttexttext">You've watered the plant <span id="water-display">0</span> times.</h1>
     <h3>You currently lose 1 water per second because of the sun.</h3>
     <button id="water-the-plant-button" class="water-button">click to water the plant :)</button>
+    <button id="increase-sun-intensity-button" class="fire-button">click to increase uv rays :(</button>
     <script>
       let waterAmount = 15;
+      let sunIntensity = 1;
       let running = true;
       const plant = document.getElementById('plant');
       const waterButton = document.getElementById('water-the-plant-button');
+      const sunButton = document.getElementById('increase-sun-intensity-button');
       const display = document.getElementById('water-display');
-      const interval = setInterval(wps, 1000)
+      const interval = setInterval(wps, 16.66666)
       const interval2 = setInterval(gameOver, 16)
       display.textContent = waterAmount;
       function wps(){
-        waterAmount--;
+        waterAmount = waterAmount - (sunIntensity / 60);
         display.textContent = waterAmount;
       }
       function gameOver(){
         if(waterAmount < 1){
-          alert("you lost :(")
           plant.src="https://landscape-solutions.net/wp-content/uploads/how-to-tell-if-a-plant-is-dead.jpg";
+          alert("you lost :(")
         }
       }
       
@@ -76,7 +79,13 @@
           display.textContent = waterAmount;
         }
       });
-      
+
+      sunButton.addEventListener('click', function(){
+        if(running == true){
+          sunIntensity++;
+          display.textContent = waterAmount;
+        }
+      );
     </script>
   </body>
 </html>
