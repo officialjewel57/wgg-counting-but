@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KEEP THE PLANT ALIVE</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", sans-serif;
+        background-color: pink;
+      }
+      
+      .water-button {
+        background-color: #0567FA;
+        color: white;
+        font-size: 15px;
+        padding: 12px;
+        border: 2px solid powderblue;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .water-button:hover {
+        background-color: #013C94;
+        border: 2px solid #0567FA;
+      }
+
+      .fire-button {
+        background-color: #FFA500;
+        color: white;
+        font-size: 15px;
+        padding: 12px;
+        border: 2px solid red;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .fire-button:hover {
+        background-color: #FFA500;
+        border: 2px solid red;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+      }
+      
+      ul li {
+        float: left;
+      }
+      
+      ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        font-family: Trebuchet MS, sans-serif;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      ul li a:hover {
+        background-color: #4287F5;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="horizontal">
+      <li><a href="https://officialjewel57.github.io/wgg-counting-but">Website</a></li>
+      <li><a href="https://officialjewel57.github.io/wgg-counting-but/water-the-plant">Water the plant</a></li>
+      <li><a href="https://officialjewel57.github.io/wgg-counting-but/art-gallery">Art Gallery</a></li>
+      <li><a href="https://officialjewel57.github.io/wgg-counting-but/home">Home</a></li>
+    </ul>
+    <h1>KEEP THE PLANT ALIVE</h1>
+    <a href="https://hexo.did.science/">
+      <img id="plant" src="https://www.ikea.com/us/en/images/products/fejka-artificial-potted-plant-indoor-outdoor-monstera__0959226_pe809439_s5.jpg?f=s" width=55%>
+    </a>
+    
+    <h1>You've watered the plant <span id="water-display">0</span> times.</h1>
+    <h3>You currently lose <span id="sun-intensity">0</span> water per second because of the sun (btw the sun is to scale).</h3>
+    <button id="water-the-plant-button" class="water-button">click to water the plant :)</button>
+    <button id="increase-sun-intensity-button" class="fire-button">click to increase uv rays :(</button>
+    <img src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882786/EducationHub/photos/sun-blasts-a-m66-flare.jpg" width=450000000000% alt=center text-align: center>
+    <script>
+      let waterAmount = 15.9666666666666666666666666666666;
+      let sunIntensity = 1;
+      let running = true;
+      const plant = document.getElementById('plant');
+      const waterButton = document.getElementById('water-the-plant-button');
+      const sunButton = document.getElementById('increase-sun-intensity-button');
+      const display = document.getElementById('water-display');
+      const sunIntensityDisplay = document.getElementById('sun-intensity');
+      const interval = setInterval(wps, 16.66666)
+      const interval2 = setInterval(gameOver, 16)
+      display.textContent = Math.floor(waterAmount);
+      sunIntensityDisplay.textContent = Math.floor(sunIntensity);
+      function wps(){
+        waterAmount = waterAmount - (sunIntensity / 60);
+        display.textContent = Math.floor(waterAmount);
+      }
+      function gameOver(){
+        if(waterAmount < 1){
+          plant.src="https://landscape-solutions.net/wp-content/uploads/how-to-tell-if-a-plant-is-dead.jpg";
+          window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+          running = false;
+          clearInterval(interval);
+          clearInterval(interval2);
+        }
+      }
+      
+      waterButton.addEventListener('click', function(){
+        if(running == true){
+          waterAmount++;
+          display.textContent = Math.floor(waterAmount);
+        }
+      });
+      sunButton.addEventListener('click', function(){
+        if(running == true){
+          sunIntensity++;
+          sunIntensityDisplay.textContent = Math.floor(sunIntensity);
+          display.textContent = Math.floor(waterAmount);
+        }
+      });
+    </script>
+  </body>
+</html>
